@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# other
+plan.md
+.claude/
+notebooks/catboost_info
+notebooks/models
+notebooks/random_forest_added_brute.ipynb
+notebooks/random_forest_no_drop.ipynb
