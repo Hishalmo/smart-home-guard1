@@ -10,7 +10,6 @@ from backend.models.enums import ClassLabel
 
 logger = logging.getLogger(__name__)
 
-# Placeholder — update when model path is finalized
 MODEL_DIR = Path(__file__).resolve().parent.parent.parent / "notebooks" / "models"
 
 

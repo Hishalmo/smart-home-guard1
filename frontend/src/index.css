@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface-base: 220 14% 96%;
+  --surface-raised: 0 0% 100%;
+  --border: 220 13% 87%;
+  --content-primary: 220 40% 10%;
+  --content-secondary: 220 20% 40%;
+  --accent: 221 83% 53%;
+}
+
+.dark {
+  --surface-base: 222 47% 9%;
+  --surface-raised: 222 47% 12%;
+  --border: 222 30% 20%;
+  --content-primary: 220 20% 95%;
+  --content-secondary: 220 15% 70%;
+  --accent: 217 91% 60%;
+}
+
+body {
+  margin: 0;
+  background: hsl(var(--surface-base));
+  color: hsl(var(--content-primary));
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
