@@ -10,7 +10,7 @@ load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.routers import health, analysis
+from backend.routers import health, analysis, scan
 from backend.services.feature_service import FeatureService
 from backend.services.ml_service import MLService
 
@@ -52,3 +52,4 @@ app.add_middleware(
 # Routers
 app.include_router(health.router, prefix="/api")
 app.include_router(analysis.router, prefix="/api")
+app.include_router(scan.router, prefix="/api")
