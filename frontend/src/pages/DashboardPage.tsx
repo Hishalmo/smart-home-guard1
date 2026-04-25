@@ -26,7 +26,6 @@ const MAX_TIMELINE_POINTS = 30
 
 function computeFlagData(flows: NetworkFlow[]) {
   if (flows.length === 0) return []
-  const n = flows.length
   const sum = (key: keyof NetworkFlow) =>
     flows.reduce((acc, f) => acc + (Number(f[key]) || 0), 0)
 

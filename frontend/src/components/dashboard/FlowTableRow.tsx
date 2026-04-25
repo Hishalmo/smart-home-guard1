@@ -80,7 +80,7 @@ function FlowTableRowInner({ flow, isExpanded, onToggle }: FlowTableRowProps) {
     ['udp', flow.udp],
     ['arp', flow.arp],
     ['icmp', flow.icmp],
-    ['igmp', flow.igmp],
+    ['igmp', flow.igmp ?? 0],
   ]
 
   const stats: Array<[string, string | number]> = [

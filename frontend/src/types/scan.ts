@@ -18,3 +18,14 @@ export interface ScanSession {
   threatCount: number
   summary?: FlowSummary
 }
+
+export interface UserPreferences {
+  userId: string
+  username?: string
+  notifyCritical: boolean
+  notifyHigh: boolean
+  notifyMedium: boolean
+  emailAlerts: boolean
+  defaultScanMode: ScanMode
+  updatedAt: string
+}

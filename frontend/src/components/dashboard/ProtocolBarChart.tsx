@@ -54,7 +54,7 @@ export function ProtocolBarChart({ protocolCounts, loading }: ProtocolBarChartPr
     return {
       protocol: proto,
       count: key ? protocolCounts[key] : 0,
-      isIot: IOT_PROTOCOLS.includes(proto),
+      isIot: (IOT_PROTOCOLS as readonly string[]).includes(proto),
     }
   })
 

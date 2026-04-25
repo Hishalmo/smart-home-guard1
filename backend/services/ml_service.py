@@ -24,9 +24,9 @@ class MLService:
         """Load model, scaler, and label encoder from disk."""
         logger.info("Loading ML artifacts from %s", self.model_path)
 
-        self.model = lgb.Booster(model_file=str(self.model_path / "lightgbm.txt"))
-        self.scaler = joblib.load(self.model_path / "scaler.pkl")
-        self.label_encoder = joblib.load(self.model_path / "label_encoder.pkl")
+        self.model = lgb.Booster(model_file=str(self.model_path / "lightgbm_v2.txt"))
+        self.scaler = joblib.load(self.model_path / "scaler_v2.pkl")
+        self.label_encoder = joblib.load(self.model_path / "label_encoder_v2.pkl")
 
         logger.info(
             "Model loaded — classes: %s", list(self.label_encoder.classes_)
